@@ -1,0 +1,71 @@
+site_name: Qilimanjaro documentation
+site_url: http://localhost
+theme:
+  name: material
+  logo: img/q.png
+  favicon: img/favicon.ico
+  font:
+    text: Montserrat
+    code: Roboto Mono
+  palette:
+    primary: white
+  features:
+    - toc.follow
+    - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.share
+    - search.highlight
+    - search.suggest
+    
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
+
+
+nav:
+  - Home:                 
+    - QaaS:                 index.md
+    - Get-started:          get-started.md
+  - QPUs:
+    - Our QPUs:             qpus/qpus.md
+    - aQPU:
+      - One aQPU:           qpus/analog1.md
+      - the other aQPU:     qpus/analog2.md
+  - Algorithms:
+    - Portfolio:            algorithms.md              
+    - Analog:
+      - sample:             analog/sample.md           
+    - Gate-Based:       
+      - quantum walks:      gate-based/quantum-walks.md
+      - quantum walks (NB): gate-based/quantum_walks.ipynb
+      - code in notebook:   gate-based/intro_to_quantum_solutions.ipynb
+  - FAQ:
+    - Index:                faqs.md
+
+plugins:
+  - mkdocs-jupyter
+  - search
+  - tags
+
