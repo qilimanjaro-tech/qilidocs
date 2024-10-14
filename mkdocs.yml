@@ -1,5 +1,5 @@
 site_name: Qilimanjaro documentation
-site_url: http://localhost
+site_url: https://qilimanjaro-tech.github.io/qilidocs/
 theme:
   name: material
   logo: img/q.png
