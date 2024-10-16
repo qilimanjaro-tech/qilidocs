@@ -2,3 +2,16 @@ img[src*='#center'] {
     display: block;
     margin: auto;
 }
+
+
+.md-header {
+    background: linear-gradient(45deg, rgba(230,32,62,1) 0%, rgba(127,28,219,1) 50%, rgba(59,35,255,1) 100%);
+}
+
+.md-tabs {
+    background: linear-gradient(45deg, rgba(230,32,62,1) 0%, rgba(127,28,219,1) 50%, rgba(59,35,255,1) 100%);
+}
+
+:root {
+      --md-primary-fg-color:        #7f1cbd;
+}

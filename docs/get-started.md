@@ -1,12 +1,12 @@
-# Get the party started
+# **Get the party started**
 
 Check here if you have everything up and running!
 
-## Using your laptop
+## **Using your laptop**
 
 Do blablabla
 
-## Using QaaS
+## **Using QaaS**
 
 Do the same with the QaaS user
 
