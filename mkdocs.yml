@@ -43,8 +43,8 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css
 
-extra:
-  use_directory_urls: false
+#extra:
+  #use_directory_urls: false
   #tags:
   #  analog: Analog
   #  gate-based: Gate-based
@@ -55,6 +55,7 @@ extra:
 
 plugins:
   - mkdocs-jupyter
+      #include_requirejs: true IT BREAKS LATEX
   - search
   #- tags:
   #    tags_file: algorithms.md
